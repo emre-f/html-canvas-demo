@@ -140,7 +140,7 @@ function spawnEnemies() {
         
         const color = `hsl(${Math.random() * 360}, 50%, 50%)`; // Give enemy random color
 
-        const velocity = getUnitVector({x, y}, {x: canvas.width / 2, y: canvas.height /2}, (Math.random() * 1.5) + 0.5)
+        const velocity = getUnitVector({x, y}, {x: canvas.width / 2, y: canvas.height /2}, (Math.random() * 0.35));
 
         enemies.push(new Enemy(x, y, radius, color, velocity))
     }, 1000)
